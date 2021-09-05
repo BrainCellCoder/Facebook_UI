@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+
+.create-story{
+    background-image: url("abhishek.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.friend-story{
+    transition: all .3s;
+    background: black;
+    cursor: pointer;
+}
+
+.stories img{
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.create-story:hover, .friend-story:hover, .friend:hover{
+    transform: scale(1.1);
+    transition: all .3s;
+}
+
+.see-all-stories{
+    position: absolute;
+    top: 91px;
+    right: -15px;
+    cursor: pointer;
+}
+
+.create-fb-posts, .create-room{
+    width: 71%;
+}
+
+.nav-gray-bg{
+    background-color: #242526;
+}
+
+.dark-btn-bg{
+    background-color: #242526;
+}
+
+.light-btn-bg{
+    background-color: white;
+}
+
+.container-gray-bg{
+    background-color: #18191A;
+}

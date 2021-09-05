@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="container w-screen bg-gray-100">
+    <!-- Navbar -->
+      <div class="navbar w-screen h-14 bg-white flex justify-between">
+        <!-- Facebook logo and Search -->
+        <div class="facebook-logo-search w80 flex justify-center items-center">
+          <div class="logo h-10 w-10 ml-3 rounded-full bg-blue-500 flex justify-center items-center">
+            <i class="fab fa-facebook-f mt-5 text-3xl h-10 text-white"></i>
+          </div>
+          <div class="search bg-gray-100 w-64 flex justify-cente items-center h-10 ml-2 rounded-full">
+            <div class="search-icon ml-2">
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="search-input ml-2">
+              <input
+                class="bg-gray-100 rounded-full outline-none text-lg"
+                type="text"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- Mid menu -->
+        <div class="mid-menu h-12 mt-1 flex justify-between items-center">
+          <div class="home h-full px-11 text-blue-500 border-black-600 cursor-pointer flex flex-col justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-8" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+            </svg>
+          </div>
+          <div class="market h-full px-11 rounded-lg ml-1 hover:bg-gray-100 cursor-pointer flex justify-center items-center">
+            <i class="fas fa-store text-xl text-gray-500"></i>
+          </div>
+          <div class="group h-full px-11 ml-1 rounded-lg hover:bg-gray-100 cursor-pointer flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-8 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+            </svg>
+          </div>
+          <div class="events relative h-full px-11 ml-1 rounded-lg hover:bg-gray-100 cursor-pointer flex justify-center items-center">
+            <div class="events-number absolute bg-red-500 rounded-full text-xs text-white top-1 right-7">
+              <span class="p-1 font-bold">5+</span>
+            </div>
+            <i class="fas fa-th-large text-xl text-gray-500"></i>
+          </div>
+        </div>
+        <!-- End menu -->
+        <div class="end-menu mr-6 w-96 flex justify-between items-center">
+          <!-- Light Dark Button -->
+        <div class="light-dark-btn w-11 h-11 rounded-full border border-gray-700 dark-btn-bg cursor-pointer flex justify-center items-center">
+          <span class="light-dark-text text-sm text-white">Dark</span>
+        </div>
+          <div class="user-profile px-1 rounded-full flex justify-center items-center h-8 cursor-pointer hover:bg-gray-100">
+            <div class="profile-picture">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-7 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="profile-name text-base">
+              <span>Abhishek</span>
+            </div>
+          </div>
+          <div class="menu bg-gray-200 h-9 w-9 p-5 hover:bg-gray-300 cursor-pointer rounded-full flex justify-center items-center">
+            <i class="fas fa-th text-xl"></i>
+          </div>
+          <div class="messenger relative p-5 bg-gray-200 h-9 w-9 hover:bg-gray-300 cursor-pointer rounded-full flex justify-center items-center">
+            <div class="messenger-number absolute bg-red-500 rounded-full text-xs text-white -top-1 -right-1">
+              <span class="p-1">9</span>
+            </div>
+            <i class="fab fa-facebook-messenger p-5 text-xl"></i>
+          </div>
+          <div class="notification relative p-5 bg-gray-200 h-9 w-9 hover:bg-gray-300 cursor-pointer rounded-full flex justify-center items-center">
+            <div class="notification-number absolute bg-red-500 rounded-full text-xs text-white -top-1 -right-1">
+              <span class="p-1">5</span>
+            </div>
+            <i class="fas fa-bell text-xl"></i>
+          </div>
+          <div class="account bg-gray-200 p-5 h-9 w-9 hover:bg-gray-300 cursor-pointer flex rounded-full justify-center items-center">
+            <i class="fas fa-caret-down text-xl"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main -->
+      <div class="main h-screen w-screen flex">
+        <!-- Sidebar -->
+        <div class="sidebar w-96 px-3 pt-4 rounded-lg">
+          <div class="sidebar-profile p-3 rounded-lg hover:bg-gray-200 cursor-pointer rounded-lg flex items-center">
+            <i class="far fa-user text-2xl w-11"></i>
+            <span class="text-lg font-semibold text-gray-500">Abhishek Sharma</span>
+          </div>
+          <div class="sidebar-covid p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-shield-virus text-2xl w-11 text-pink-500"></i>
+            <span class="text-lg font-semibold text-gray-500">COVID-19 Information Center</span>
+          </div>
+          <div class="sidebar-friends p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-user-friends text-2xl w-11 text-green-500"></i>
+            <p class="flex flex-col"><span class="text-sm font-semibold text-gray-500">Friends</span><span class="text-xs text-blue-700"><i class="fas fa-circle"></i> 1 request</span></p>
+          </div>
+          <div class="sidebar-saved relative p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-check-circle text-red-500 absolute top-1 left-6"></i>
+            <i class="fas fa-bookmark text-2xl w-11 text-blue-700"></i>
+            <span class="text-lg font-semibold text-gray-500">Saved</span>
+          </div>
+          <div class="sidebar-groups relative p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-users text-2xl w-11 text-purple-600"></i>
+            <span class="text-lg font-semibold text-gray-500">Groups</span>
+          </div>
+          <div class="sidebar-marketplace p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-store text-2xl w-11 text-yellow-400"></i>
+            <span class="text-lg font-semibold text-gray-500">Marketplace</span>
+          </div>
+          <div class="sidebar-events p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-calendar-plus text-2xl w-11 text-red-500"></i>
+            <span class="text-lg font-semibold text-gray-500">Events</span>
+          </div>
+          <div class="sidebar-memories p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fas fa-history text-2xl w-11 text-blue-500"></i>
+            <span class="text-lg font-semibold text-gray-500">Memories</span>
+          </div>
+          <div class="sidebar-pages p-3 rounded-lg hover:bg-gray-200 cursor-pointer flex items-center">
+            <i class="fab fa-font-awesome-flag text-2xl w-11 text-yellow-600"></i>
+            <span class="text-lg font-semibold text-gray-500">Pages</span>
+          </div>
+        </div>
+
+        <!-- Feeds -->
+        <div class="feeds flex flex-col flex-grow items-center">
+          <!-- Stories -->
+          <div class="stories pt-5 flex relative">
+            <div class="create-story mr-2 rounded-lg w-28 h-48 cursor-pointer flex">
+              <div class="add-story relative bg-white w-full h-11 rounded-bl-lg rounded-br-lg mt-auto flex">
+                <div class="add-story-icon bg-white p-2 rounded-full absolute -top-5 left-9">
+                  <i class="fas fa-plus-circle text-2xl text-blue-600"></i>
+                </div>
+                <p class="mt-auto text-center w-full text-sm mb-2">Create Story</p>
+              </div>
+            </div>
+            <div class="friend-story relative mr-2 rounded-lg w-28 h-48 flex">
+              <img class="rounded-lg" src="https://images.hindustantimes.com/img/2021/08/01/1600x900/2021-08-01T134022Z_1808728443_SP1EH810Y11MP_RTRMADP_3_OLYMPICS-2020-HOC-M-TEAM11-QFNL-000400_1627825782684_1627825794105.JPG" alt="">
+              <p class="mt-auto absolute bottom-0 p-1 w-full text-sm mb-2 text-white font-bold">Tokyo Olympics<br>2020</p>
+            </div>
+            <div class="friend-story relative mr-2 rounded-lg w-28 h-48 flex">
+              <img class="rounded-lg" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/47385912_1510806395716747_8933985305183125504_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=exOCAN9Bv3oAX84w72C&_nc_oc=AQlkkZuBlzrKhdXE7Xo6xqhH32fFPqpG2cIrozeOPYHf78vIJ5RhoHFvLiEFWigjfqbPWM3_qreEDHwLuPfH-lRU&_nc_ht=scontent.fgau1-2.fna&oh=d39f195b457ba3c57bb0c151eb9897e6&oe=6131772E" alt="">
+              <p class="mt-auto absolute bottom-0 p-1 w-full text-sm mb-2 text-white font-bold">Bhaskar Jyoti<br>Sharma</p>
+            </div>
+            <div class="friend-story relative mr-2 rounded-lg w-28 h-48 flex">
+              <img class="rounded-lg" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/86373537_2840335602693487_6418946018213101568_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=NGlLWeo-8G8AX-zl4uv&_nc_ht=scontent.fgau1-2.fna&oh=77f4cdc5c581c95c58dcf1ff9442809c&oe=61312156" alt="">
+              <p class="mt-auto absolute bottom-0 p-1 w-full text-sm mb-2 text-white font-bold">Kapil<br>Daikwal</p>
+            </div>
+            <div class="friend-story relative mr-2 rounded-lg w-28 h-48 flex">
+              <img class="rounded-lg" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/176468002_3005918399729890_3487292133212599747_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vVRzz8IwbOIAX-jEE6d&_nc_ht=scontent.fgau1-1.fna&oh=0e8a600efa4246dafa55cffc35203f82&oe=613199FB" alt="">
+              <p class="mt-auto absolute bottom-0 p-1 w-full text-sm mb-2 text-white font-bold">Vishal<br>Pradhan</p>
+            </div>
+            <div class="see-all-stories border border-gray-300 hover:bg-gray-100 bg-white w-12 h-12 rounded-full flex justify-center items-center">
+              <i class="fas fa-arrow-right text-gray-500"></i>
+            </div>
+          </div>
+
+          <!-- Create FB Posts -->
+          <div class="create-fb-posts rounded-lg mt-3 p-3 pt-1 pb-1 bg-white border">
+            <div class="posts-inputs p-3 flex items-center">
+              <div class="dp w-10">
+                <i class="fas fa-user-circle text-3xl cursor-pointer hover:text-gray-500 text-gray-400"></i>
+              </div>
+              <div class="text-input w-full bg-gray-100 rounded-full">
+                <input class="outline-none w-full bg-gray-100 cursor-pointer hover:bg-gray-200 rounded-full p-2" type="text" placeholder="What's on your mind, Abhishek?">
+              </div>
+            </div>
+            <div class="video-photo-feelings justify-around border-t border-gray-200 mt-1 p-2 flex">
+              <div class="live-video rounded-lg hover:bg-gray-200 cursor-pointer px-6 py-2 flex justify-center items-center">
+                <i class="fas fa-video text-red-600 text-2xl"></i>
+                <span class="text-sm ml-1 text-gray-500 font-semibold">Live Video</span>
+              </div>
+              <div class="photo rounded-lg flex hover:bg-gray-200 cursor-pointer px-6 py-2 justify-center items-center">
+                <i class="far fa-images text-green-500 text-2xl"></i>
+                <span class="text-sm ml-1 text-gray-500 font-semibold">Photo/Video</span>
+              </div>
+              <div class="feelings rounded-lg hover:bg-gray-200 cursor-pointer px-6 py-2 flex justify-center items-center">
+                <i class="far fa-grin text-yellow-400 text-2xl"></i>
+                <span class="text-sm ml-1 text-gray-500 font-semibold">Feelings/Activity</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Create Room -->
+          <div class="create-room relative flex overflow-x-hidden rounded-lg bg-white p-2 rounded-lg border h-20 mt-4">
+            <div class="create-room-section flex items-center">
+              <div class="click-to-create-room border border-blue-300 cursor-pointer hover:bg-gray-100 p-2 w-56 rounded-full mr-3 flex items-center justify-center">
+                <div class="plus-video-icon ml-1 h-5">
+                  <i class="fas fa-video text-2xl text-blue-600 relative"><span class="absolute text-white right-4 top-0 text-pink-400 font-bold text-lg">+</span></i>
+                </div>
+                <span class="ml-2 text-blue-600">Create Room</span>
+              </div>
+              <div class="friends-online flex w-full justify-between">
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/186489790_1142740946136705_4682261249492542368_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=u6RdHDkYEZIAX_QosBT&tn=s5KJY-g3zrFarW-p&_nc_ht=scontent.fgau1-2.fna&oh=32b008610c96b32f069562c79fcb8197&oe=6130231A" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/195937774_1331781413882941_1527962515914939286_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=S1Gcv3RJcu0AX_HwjLm&_nc_ht=scontent.fgau1-1.fna&oh=0185c38c88b94cd128257a958a7d01b2&oe=612F7036" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/133601595_3415464588576812_3553575625164609227_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=oTVjSfwk89QAX-0tMz_&tn=s5KJY-g3zrFarW-p&_nc_ht=scontent.fgau1-1.fna&oh=0511a316fcb14c8086738fd0e6503bf9&oe=6130D12D" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/131894099_1249332098800270_7939081706661351512_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=900HB64aEIYAX_v6OHf&_nc_ht=scontent.fgau1-1.fna&oh=1eef5fb60de23c274699b895a1d23cda&oe=61328835" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full h-10 w-10" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/90914020_667285450480918_2689139510050029568_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=INvtwFftsQAAX__iV8D&_nc_ht=scontent.fgau1-1.fna&oh=dabd810fb73d22a9874c3ab08e98a987&oe=613267A6" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/130600497_3342708862517630_8905642608566377664_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=8A8KX70IrikAX-2_sZ4&_nc_ht=scontent.fgau1-1.fna&oh=8dc47622360b5595f99c7a0b3a85269f&oe=6132C9D6" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/176798571_2897692367227503_1719274448873099133_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=9GdR129PCxAAX8QvxPJ&_nc_ht=scontent.fgau1-2.fna&oh=816bf669f47c7ea90fb08a1605417410&oe=613278EC" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t31.18172-8/18738923_1478532948906897_1872157964219514336_o.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=tBJ6wX2NyZoAX942AUo&_nc_ht=scontent.fgau1-2.fna&oh=c97f32b8259eb81f39b5b7dd0c678c75&oe=612F7035" alt="">
+                </div>
+                <div class="friend relative w-10 h-10 rounded-full cursor-pointer border border-gray-300">
+                  <div class="green-dot absolute w-2 h-2 bg-green-500 rounded-full top-8 right-1"></div>
+                  <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/213466042_1014275635980751_1234861251072391918_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=JP9aTmuBuPgAX_BOFei&_nc_ht=scontent.fgau1-1.fna&oh=bc933218c06f1307491cd26d7c4d7442&oe=61325B03" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="next absolute right-2 top-3 rounded-full w-14 h-14 border-2 bg-white hover:bg-gray-100 cursor-pointer flex justify-center items-center">
+              <i class="fas fa-chevron-right text-xl text-gray-500"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contacts -->
+        <div class="contacts w-80 mr-10">
+          <div class="contact-header flex justify-between items-center mt-5 h-10">
+            <span class=" flex-grow text-gray-600 font-semibold text-xl">Contacts</span>
+            <div class="contact-header-menu w-28 flex justify-between">
+              <div class="new-room flex items-center h-6 p-1 rounded-full hover:bg-gray-200 cursor-pointer">
+                <i class="fas fa-video text-gray-600"></i>
+              </div>
+              <div class="search-name flex items-center h-6 p-1 rounded-full hover:bg-gray-200 cursor-pointer">
+                <i class="fas fa-search text-gray-600"></i>
+              </div>
+              <div class="options p-1 rounded-full h-6 flex hover:bg-gray-200 cursor-pointer">
+                <i class="fas fa-ellipsis-h text-gray-600"></i>
+              </div>
+            </div>
+          </div>
+          <div class="contacts-online">
+            <div class="my-friend  w-full hover:bg-gray-200 cursor-pointer rounded-lg p-2 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/213466042_1014275635980751_1234861251072391918_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=JP9aTmuBuPgAX_BOFei&_nc_ht=scontent.fgau1-1.fna&oh=bc933218c06f1307491cd26d7c4d7442&oe=61325B03" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600">Durga Devi</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t31.18172-8/18738923_1478532948906897_1872157964219514336_o.jpg?_nc_cat=108&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=tBJ6wX2NyZoAX942AUo&_nc_ht=scontent.fgau1-2.fna&oh=c97f32b8259eb81f39b5b7dd0c678c75&oe=612F7035" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Ramesh Kashyap</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/176798571_2897692367227503_1719274448873099133_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=9GdR129PCxAAX8QvxPJ&_nc_ht=scontent.fgau1-2.fna&oh=816bf669f47c7ea90fb08a1605417410&oe=613278EC" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Aditi Benerjee</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/130600497_3342708862517630_8905642608566377664_n.jpg?_nc_cat=104&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=8A8KX70IrikAX-2_sZ4&_nc_ht=scontent.fgau1-1.fna&oh=8dc47622360b5595f99c7a0b3a85269f&oe=6132C9D6" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Rekib Ahmed</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full h-10 w-10" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/90914020_667285450480918_2689139510050029568_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=INvtwFftsQAAX__iV8D&_nc_ht=scontent.fgau1-1.fna&oh=dabd810fb73d22a9874c3ab08e98a987&oe=613267A6" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600">Anamika Joishi</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/131894099_1249332098800270_7939081706661351512_n.jpg?_nc_cat=105&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=900HB64aEIYAX_v6OHf&_nc_ht=scontent.fgau1-1.fna&oh=1eef5fb60de23c274699b895a1d23cda&oe=61328835" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Apurba Sharma</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/133601595_3415464588576812_3553575625164609227_n.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=oTVjSfwk89QAX-0tMz_&tn=s5KJY-g3zrFarW-p&_nc_ht=scontent.fgau1-1.fna&oh=0511a316fcb14c8086738fd0e6503bf9&oe=6130D12D" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Anurag Sharma</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-2.fna.fbcdn.net/v/t1.6435-9/186489790_1142740946136705_4682261249492542368_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=u6RdHDkYEZIAX_QosBT&tn=s5KJY-g3zrFarW-p&_nc_ht=scontent.fgau1-2.fna&oh=32b008610c96b32f069562c79fcb8197&oe=6130231A" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Drishti Joishi</span>
+            </div>
+            <div class="my-friend  w-full p-2 hover:bg-gray-200 cursor-pointer rounded-lg p-1 flex items-center">
+              <div class="my-friend-dp relative bg-green-300 w-10 h-10 rounded-full">
+                <img class="rounded-full" src="https://scontent.fgau1-1.fna.fbcdn.net/v/t1.6435-9/195937774_1331781413882941_1527962515914939286_n.jpg?_nc_cat=107&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=S1Gcv3RJcu0AX_HwjLm&_nc_ht=scontent.fgau1-1.fna&oh=0185c38c88b94cd128257a958a7d01b2&oe=612F7036" alt="">
+                <div class="online-dot absolute w-2 h-2 bg-green-500 rounded bottom-0 right-1"></div>
+              </div>
+              <span class="ml-3 font-semibold text-gray-600"> Neeraj Newar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+  </body>
+</html>
